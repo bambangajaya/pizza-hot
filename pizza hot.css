@@ -1,0 +1,420 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+
+}
+body{
+    font-family:'poppins', sans-serif;
+    background-color: #010101;
+   color: #fff;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: rgba(1, 1, 1, 0.8);
+    border-bottom: 3px solid  rgb(111, 13, 4);
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+
+}
+.navbar .navbar-logo{
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(227, 202, 175);
+
+}
+.navbar .navbar-logo span{
+    color: rgb(218, 16, 16);
+}
+.navbar .navbar-nav a{
+    color: #fff;
+    display: inline-block;
+    font-size: 1.3rem;
+    margin: 0 1rem;
+    
+}
+.navbar .navbar-nav a:hover{
+    color:rgb(155, 13, 13) ;
+}
+
+.navbar .navbar-extra a{
+    color: #fff;
+    margin:  0 0.5rem;
+}
+.navbar .navbar-extra a:hover{
+    color:rgb(155, 13, 13) ;
+}
+ 
+#menu{
+    display: none;
+}
+
+.shopping-cart{
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    height: 100vh;
+    width: 35rem;
+    padding: 0 1.5rem;
+    color: rgba(1, 1, 1, 0.8);
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+.shopping-cart.activee{
+    right: 0;
+}
+.shopping-cart .cart-items{
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1rem;
+    border-bottom: 1px solid #666;
+    position: relative;
+}
+.shopping-cart img{
+    height: 6rem;
+    
+}
+.shopping-cart h3{
+    font-size: 1.6rem;
+    padding-bottom: 0.5rem;
+}
+.shopping-cart .item-price{
+    font-size: 1.2rem;
+}
+.shopping-cart .remove{
+    position: absolute;
+    right: 1rem;
+    cursor: pointer;
+}
+
+.shopping-cart .remove:hover{
+    color: rgb(155, 13, 13);
+}
+
+.awal{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(./pizaa/ivan-torres-MQUqbmszGGM-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.awal::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;             
+}
+
+.awal .content{
+    padding: 1.4rem 7% ;
+    max-width: 60rem;
+}
+.awal .content h1{
+    font-size: 5rem;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+    line-height: 1.2;
+}
+.awal .content span{
+    color:rgb(218, 16, 16);
+}
+.awal .content p{
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    line-height: 1.4;
+    font-weight: 200;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+    
+}
+.awal .content .box{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+    border-radius: 15px;
+    color: #fff;
+    background-color:rgb(218, 16, 16);
+    font-weight: 300;
+    box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);;
+}
+.about, .menu-hot, .lokasi{
+    padding: 8rem 7% 1.4rem ;
+}
+.about h2, .menu-hot h2, .lokasi h2{
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+    
+}
+
+.about h2 span{
+    color: rgb(218, 16, 16);
+}
+.menu-hot h2 span{
+    color: rgb(218, 16, 16);
+}
+.lokasi h2 span{
+    color: rgb(218, 16, 16);
+}
+.about .row{
+    display: flex;
+
+
+}
+.about .row .about-img{
+    flex: 1 1 30rem;
+    
+}
+.about .row .about-img img{
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+}
+.about .row .komen{
+    flex: 1 1 20rem;
+    padding: 0 0rem;
+    
+}
+.about .row .komen h3{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+} 
+.about .row .komen p{
+    margin-bottom: 0.8rem;
+    font-size: 1.5rem;
+    font-weight: 100;
+    line-height: 1.6;
+}
+
+
+.foother{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    background-color: #fff;
+    padding: 40px 0 ;
+
+}
+.foother .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: #4b4c4d;
+}
+.foother .social a{
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-break: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+.foother .social a:hover{
+    opacity: 0.9;
+
+}
+.foother ul{
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    color: #4b4c4d;
+    text-align: center;
+}
+.foother ul li a{
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+.foother ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+.foother ul li a:hover{
+    opacity: 1;
+}
+.foother .copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+
+}
+.menu-hot h2, .lokasi h2{
+    margin-bottom: 0.5rem;
+}
+
+.menu-hot p, .lokasi{
+    text-align: center;
+    max-width: 50rem;
+    margin: auto;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.6;
+
+}
+.lokasi .mapss{
+    display: flex;
+    margin-top: 2rem;
+    background-color: white;
+    flex-wrap: wrap;
+}
+.lokasi .mapss .map{
+    flex: 1 1 45rem;
+    width: 300%;
+    object-fit: cover;
+    height: 400px;
+}
+.menu-hot .card-all{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 2fr));
+    gap: 1.5rem;
+    margin-top: 4rem;
+
+
+}
+
+.menu-hot .produkcard{
+    text-align: center;
+    border: 3px solid #666;
+    padding: 2rem;
+
+}
+
+.menu-hot .produkicon{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    
+
+}
+
+.menu-hot .produkicon a{
+    width: 4rem;
+    height: 4rem;
+    color: #fff;
+    margin: 0.3rem;
+    border: 1px solid #666;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-hot .produkicon a:hover{
+    background-color: rgb(218, 16, 16) ;
+    border: 3px solid #ffd700;
+
+}
+
+.menu-hot .produk-img{
+    padding: 1rem 0;
+
+}
+.menu-hot .produk-img img{
+    height: 20rem;
+    max-width: 100%;
+}
+.menu-hot .produk-conten h3{
+    font-size: 2rem;
+}
+.menu-hot .produk-jempol{
+    font-size: 1.7rem;
+    padding: 0.8rem;
+    color: #ff0000;
+}
+.menu-hot .produk-jempol .jempol{
+    fill: #ff0000; 
+}
+.menu-hot .card-harga{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+ @media (max-width: 768px){
+    html {
+        font-size: 62.5%;
+    }
+    #menu{
+        display: inline-block;
+    }
+
+    .navbar .navbar-nav{
+      position: absolute;
+      top: 100%;
+      right: -100%;
+      background-color: #fff;
+      width: 30rem;
+      height: 100vh;
+      transition: 0.3s;
+    }
+    .navbar .navbar-nav.active{
+        right: 0;
+    }
+    .navbar .navbar-nav a{
+        color: #010101;
+        display: block;
+        margin: 1.5rem;
+        padding: 8px;
+        font-size: 2rem;
+    }
+    .navbar .navbar-nav a::after{
+        transform-origin: 0 0;
+    }
+
+    .navbar .navbar-nav a:hover a::after{
+        transform: scaleX(0.2);
+    }
+    .about .row{
+        flex-wrap: wrap;
+    } 
+
+    .about .row .about-img img{
+        height: 24rem;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .about .row .row2{
+        padding: 0;
+    }
+
+    .about .row .row2 h3{
+        margin-top: 1rem;
+        font-size: 1.6rem;
+    }
+ }
+ @media (max-width: 450px){
+    html{
+        font-size: 55%;
+    }
+ }
